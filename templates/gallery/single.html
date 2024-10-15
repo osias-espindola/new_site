@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block extrahead %}
+{{ macros::photoswipe_script(gallery=".images")}}
+{% endblock extrahead %}
+
+{% block content %}
+<main class="page">
+    {% include "gallery/item.html" %}
+</main>
+{% endblock content %}

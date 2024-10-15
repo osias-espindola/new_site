@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block content %}
+<main class="page">
+    <h1>{{ taxonomy.name }}</h1>
+    {%- for term in terms -%}
+    <a href="{{term.permalink}}"> {{term.name}} </a><br>
+    {%- endfor -%}
+</main>
+{% endblock content %}

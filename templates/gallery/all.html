@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block extrahead %}
+{{ macros::photoswipe_script(gallery=".images")}}
+{% endblock extrahead %}
+
+{% block content %}
+<main class="page">
+    <h1 class="center">{{ section.title | safe}}</h1>
+    {% for page in section.pages %}
+      {% include "gallery/item.html" %}
+
+      <br>
+      <br>
+      {% if loop.last != true %}<hr class="fade">{% endif %}
+      <br>
+    {% endfor %}
+</main>
+{% endblock content %}

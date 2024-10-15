@@ -2,17 +2,93 @@
 title = "Test do thema seagull"
 base_url = "https://elections_nevers.fr"
 
+theme = "seagull"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
+
+# Do build rss.xml
+
+
+taxonomies = [
+    {name = "authors"},
+    {name = "tags"},
+    {name = "category"},
+    ]
+
+default_language = "fr"
+
 
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
+highlight_code = false
 
 [extra]
 # Put all your custom variables here
+name = "Seagull"
+logo = "img/gull.svg"
+description = "Seagull demo website"
+
+
+# Number of articles to display on homepage
+[extra.homepage]
+n_articles = 5
+
+# This configures the navigation menu
+[extra.nav]
+links = [
+    # "_index.md",
+    "features.md",
+    "contribute.md",
+    "map/_index.md",
+    "contact.md",
+    "blog/_index.md",
+]
+
+# This configures the footer menu
+[extra.footer]
+links = [
+    "_index.md",
+    "about.md",
+    "contact.md",
+    "contribute.md",
+]
+
+# the following links will appear in the footer
+[[extra.social.link]]
+name = "Youtube"
+url = "https://www.youtube.com/@agglonevers"
+img = "https://cdn.simpleicons.org/youtube/FFF"
+[[extra.social.link]]
+name = "Tiktok"
+url = "https://www.tiktok.com/@villedenevers"
+img = "https://cdn.simpleicons.org/tiktok/FFF"
+[[extra.social.link]]
+name = "X"
+url = "https://x.com/villedenevers"
+img = "https://cdn.simpleicons.org/x/FFF"
+[[extra.social.link]]
+name = "Facebook"
+url = "https://www.facebook.com/nevers.officiel"
+img = "https://cdn.simpleicons.org/facebook/FFF"
+[[extra.social.link]]
+name = "Instagram"
+url = "https://www.instagram.com/villedenevers/"
+img = "https://cdn.simpleicons.org/instagram/FFF"
+[[extra.social.link]]
+name = "Linkdin"
+url = "https://fr.linkedin.com/company/villedenevers"
+img = "https://cdn.simpleicons.org/linkedin/FFF"
+
+
+[extra.theme]
+toc_title = "Table of content"
+feed_thumb_height = 240
+
+[extra.theme.date]
+format="%d-%m-%Y"
+locale="en_US"
