@@ -41,7 +41,7 @@ n_articles = 5
 # This configures the navigation menu
 [extra.nav]
 links = [
-    # "_index.md",
+    "_index.md",
     "features.md",
     "contribute.md",
     "map/_index.md",
