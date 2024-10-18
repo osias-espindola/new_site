@@ -2,10 +2,15 @@
 title = "Vote életronique"
 description = "Vote électronique : comment ça marche ?"
 date = 2024-10-07
-extra.thumbnail = "../../static/machine-a-voter_p.jpg"
+extra.thumbnail = "../../static/img/machine-a-voter_p.jpg"
 +++
--- --
-# **Vote électronique : comment ça marche ?**<br><br>
+---
+
+# **Vote électronique : comment ça marche ?**
+
+---
+
+![machine-a-voter](/img/machine-a-voter_p.jpg "machine-a-voter")
 
 #### **Réglementation sur le déroulement de la journée de vote**
 

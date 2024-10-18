@@ -29,7 +29,7 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-name = "Résult des élections"
+name = "Élections Nevers"
 logo = "static/logo_tetiere_site.png"
 description = "Seagull demo website"
 
@@ -46,9 +46,10 @@ links = [
     "../content/blog/procuration.md",
     "../content/blog/vote_electronique.md",
     "../content/blog/bureau_d_vote.md",
-    "map/_index.md",
-    "contact.md",
-    "blog/_index.md",
+    "../content/blog/result_election.md",
+    #"map/_index.md",
+  
+    #"blog/_index.md",
 ]
 
 # This configures the footer menu

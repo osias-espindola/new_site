@@ -1,16 +1,16 @@
 <footer>
     <div class="social">
         {%- for link in config.extra.social.link -%}
-        <a rel="me" href="{{link.url}}"><div><img alt="{{link.name}}" class="icon" src="{{link.img}}"/> <span>{{link.name}}</span></div></a>
+        <a rel="me" href="{{link.url}}" title="{{link.name}}"><div><img alt="{{link.name}}" class="icon" src="{{link.img}}"/> <span>{{link.name}}</span></div></a>
         {% endfor -%}
     </div>
 
     <div>
-        <div>{{i::place(color="white", size="20px")}} <a href="https://maps.app.goo.gl/sZvjEoLrUc9FE1vW6" >
+        <div>{{i::place(color="white", size="20px")}} <a href="https://maps.app.goo.gl/sZvjEoLrUc9FE1vW6" title="adresse Mairie de Nevers" >
             Nous contacter Mairie de Nevers 1,<br>
                 place de l'Hôtel de Ville CS 9706<br>58000 Nevers
         </a></div> 
-        <div>{{i::phone(color="black", size="20px")}} Tél : 03.86.68.46.46</div>
+        <div title="contacter Mairie de Nevers">{{i::phone(color="black", size="20px")}} Tél : 03.86.68.46.46</div>
        
     </div>
 
@@ -27,9 +27,18 @@
         {% endfor %}
     </div>
 
-    <div>
-        <p><a href="https://www.nevers.fr/"><img src="../static/logo_tetiere_site.png" alt="site nevers "></a></p>
-        <p><a href="https://www.service-public.fr/particuliers/vosdroits/N47"><img src="../static/Service-Public.fr.png" alt="site service public"></a> </p>
+    <div class="logo" style="width: 340px;
+height: 207px; ">
+        <div>
+            <p><a href="https://www.nevers.fr/" title="site nevers"><img src="/img/logo_tetiere_site.png" alt="site nevers" style="background-color: white;position: relative;left: -141px;top: -117px;width: 171px;height: 50px;transform: translate(155px, 81px);transition: none;"></a></p>
+        </div>
+        <div>
+            <p><a href="https://www.service-public.fr/particuliers/vosdroits/N47" title="site service public"><img src="/img/Service-Public.fr.png" alt="site service public" style="position: relative;left: -141px;top: -117px;width: 171px;height: 50px;transform: translate(155px, 81px);transition: none;"></a> </p>
+        </div>
+        <div>
+            <p><a href="https://www.data.gouv.fr/fr/pages/donnees-des-elections/" title="site data.gouv"><img src="/img/data.gouv.png" alt="site data.gouv" style="position: relative;left: -141px;top: -117px;width: 171px;height: 50px;transform: translate(155px, 81px);transition: none;"></a> </p>
+        </div>
+        
         
     </div>
 </footer>
