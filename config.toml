@@ -25,12 +25,12 @@ default_language = "fr"
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+highlight_code = true
 
 [extra]
 # Put all your custom variables here
-name = "Seagull"
-logo = "img/gull.svg"
+name = "Résult des élections"
+logo = "static/logo_tetiere_site.png"
 description = "Seagull demo website"
 
 
@@ -41,9 +41,11 @@ n_articles = 5
 # This configures the navigation menu
 [extra.nav]
 links = [
-    "_index.md",
-    "features.md",
-    "contribute.md",
+    #"_index.md",
+    "../content/blog/incription.md",
+    "../content/blog/procuration.md",
+    "../content/blog/vote_electronique.md",
+    "../content/blog/bureau_d_vote.md",
     "map/_index.md",
     "contact.md",
     "blog/_index.md",
@@ -52,10 +54,10 @@ links = [
 # This configures the footer menu
 [extra.footer]
 links = [
-    "_index.md",
-    "about.md",
-    "contact.md",
-    "contribute.md",
+    # "_index.md",
+    # "about.md",
+    # "contact.md",
+    # "contribute.md",
 ]
 
 # the following links will appear in the footer

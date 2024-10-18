@@ -1,0 +1,294 @@
+/********** Navigation **********/
+.toggleMenu 
+    display: none
+    padding: 20px 10px 10px 0
+    color: var(--primary-blue)
+    display: inline-block
+    cursor: pointer
+    position: absolute
+    top: 5px
+    z-index: 10
+    right: 10px
+    font-size: 19pt
+
+
+.portal .header-scrolled .toggleMenu 
+    top: -5px
+
+
+.portal .header .nav 
+    height: 80px
+    padding: 0 20px
+    display: flex
+    align-items: center
+    transition: all .2s ease-in-out
+
+
+.portal .header .nav h1 
+    font-weight:normal
+
+
+    .portal .header .nav img 
+        width: 50px
+        margin-right: 10px
+    
+
+    .portal .header .nav .logo a 
+        font-size: 20pt
+        display: flex
+        align-items: center
+        color: var(--primary-blue)
+    
+
+    .portal .header .nav > a 
+        display: block
+        height: 100%
+        position: relative
+        transition: all .2s ease-in-out
+        flex: 1
+    
+
+    .portal .header .nav > ul 
+        flex: 1
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        font-size: 1rem
+        padding: 0
+        margin-right: -20px
+        transition: all .2s ease-in-out
+        list-style: none
+    
+
+        .portal .header .nav > ul li 
+            margin: 0
+            font-size: .1rem
+            color: var(--black)
+            font-weight: 400
+        
+
+            .portal .header .nav > ul li:hover,
+            .portal .header .nav > ul li:focus,
+            .portal .header .nav > ul li.active 
+                color: var(--primary-orange)
+            
+
+            .portal .header .nav > ul li a 
+                padding: 0 20px
+                display: inline-block
+                font-size: 0.9rem
+            
+
+        .portal .header .nav > ul > li > a 
+            padding: 31px 20px
+            font-size: 1rem
+        
+
+.portal .header-scrolled .nav > ul > li > a 
+    padding: 21px 20px
+
+
+/* @media screen and (max-width:900px)
+    .sidebar .navdisplay: none
+ */
+
+
+.portal .header .nav > ul > li > ul 
+    position: absolute
+    top: 85px
+    border-top: 3px solid #23dbdb
+    visibility: hidden
+    padding: 0px
+    z-index: 100
+
+
+.portal .header .nav li a:hover 
+    color: #3f6593
+
+
+.portal .header .nav > ul > li.hover > ul,
+.portal .header .nav > ul > li:focus-within > ul 
+    top: 80px
+    background-color: white
+    visibility: visible
+    border: 1px solid #e0e0e0
+
+
+.portal .header-scrolled .nav > ul > li.hover > ul 
+    top: 60px
+
+
+.portal .header .nav ul ul li 
+    width: 250px
+    display: list-item
+    position: relative
+    border-top: none
+    background-color: white
+    border-bottom: 1px solid rgb(230, 227, 227)
+
+
+    .portal .header .nav ul ul li a 
+        line-height: 45px
+        padding: 0 20px
+        display: block
+    
+
+.top-menu > li > .parent 
+    background-image: url("../img/downArrow.png")
+    background-repeat: no-repeat
+    background-position: right
+
+
+@media screen and (max-width: 1000px) 
+    /* .active 
+        display: block
+     */
+    .portal .header .nav > ul 
+        border-bottom: 1px solid #002060
+        margin-bottom: 10px
+        position: absolute
+        top: 65px
+        width: 100%
+        background-color: white
+        display: block
+        z-index: 11
+        left: 0px
+    
+
+    .portal .header-scrolled .nav > ul 
+        top: 44px
+    
+
+    .portal .header .nav > ul a 
+        color: black
+    
+
+    .portal .header .nav > ul > li 
+        float: none
+        /* padding: 0 20px */
+    
+
+    .portal .header .nav > ul li.hide 
+        display: none
+    
+
+    .portal .header .nav > ul li li a.hover,
+    .portal .header .nav > ul li li li a.hover 
+        background-color: transparent
+    
+
+    .portal .header .nav > ul li.hover > a.parent 
+        background-image: url("../img/upArrow.png")
+        background-repeat: no-repeat
+        background-position: 95% 50%
+        background-color: transparent
+    
+
+    .portal .header .nav > ul li li.hover > a.parent 
+        background-image: url("../img/upArrow.png")
+        background-repeat: no-repeat
+        background-position: 95% 50%
+        background-color: transparent
+    
+
+    .portal .header .nav > ul > li > .parent 
+        background-position: 95% 50%
+    
+
+    .portal .header .nav > ul li li .parent 
+        background-image: url("../img/downArrow.png")
+        background-repeat: no-repeat
+        background-position: 95% 50%
+    
+
+    .portal .header .nav > ul ul 
+        /* display: block */
+        width: 100%
+        border: none
+    
+
+    .portal .header .nav ul ul li 
+        width: 100%
+    
+
+    .portal .header .nav > ul > li > a 
+        border-top: 1px solid #dae3f3
+        line-height: 1
+        display: block
+        padding: 20px
+    
+
+    .portal .header .nav > ul > li.hover > ul,
+    .portal .header .nav > ul > li li.hover ul 
+        position: static
+        width: 100%
+        border: none
+    
+
+        .portal .header .nav > ul > li.hover > ul > li.hover > ul 
+            width: 100%
+        
+
+    .portal .header .nav > ul li li a 
+        background: white
+        /* border-top: 1px solid #dae3f3 */
+        color: #002060
+        font-size: 10pt
+        padding-left: 40px
+    
+
+    .portal .header .nav > ul li li li a 
+        background: white
+        border-top: 1px solid #dae3f3
+        padding-left: 60px
+    
+
+    .portal .header .nav > ul li li 
+        background-color: white
+    
+
+        .portal .header .nav > ul li li.hover 
+            background-color: white
+        
+    /* .fa-xmark
+        min-width: 22px
+     */
+    #search-icon, #search-mini-icon 
+        background-image: url(../img/toggle-menu-buttons.png)
+        background-position: -92px -6px
+        width: 30px
+        height: 30px
+        float: right
+    
+
+    #menu-icon, #menu-mini-icon 
+        background-image: url(../img/toggle-menu-buttons.png)
+        background-position: -8px -6px
+        width: 26px
+        height: 30px
+        float: right
+        margin-left: 10px
+    
+
+        #menu-icon.active, #menu-mini-icon.active 
+            background-image: url(../img/toggle-menu-buttons.png)
+            background-position: -51px -6px
+        
+
+        #menu-mini-icon.active 
+            margin-right: 0px
+        
+
+
+@media screen and (max-width: 425px) 
+    .portal .header .nav img 
+        width: 40px
+        margin-right: 10px
+    
+
+    .portal .header .nav .logo a 
+        font-size: 16pt
+        display: flex
+        align-items: center
+        color: var(--primary-blue)
+    

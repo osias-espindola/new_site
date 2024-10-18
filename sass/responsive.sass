@@ -1,0 +1,106 @@
+.flex-container 
+    display: flex
+    flex-direction: row
+
+
+@media only screen and (max-width: 1250px) 
+    .sidebar 
+        padding-right: 20px
+    
+
+    footer .flex-container 
+        flex-direction: column
+        text-align: center
+    
+
+    footer .footer-bottom .left 
+        margin-bottom: 10px
+    
+
+    footer .footer-top .right a 
+        white-space: nowrap
+        display: inline-block
+        margin-top: 10px
+    
+
+
+@media only screen and (max-width: 993px) 
+    .row.flex-container 
+        flex-wrap: wrap
+    
+
+        .row.flex-container > div 
+            flex: 33%
+        
+
+    .content-center 
+        width: calc(100% - 300px)
+    
+
+    .sidebar 
+        margin-left: 20px
+    
+
+
+@media only screen and (max-width: 801px) 
+    .flex-container 
+        flex-direction: column
+    
+
+    .header .top .list ul.social 
+        margin-right: 0px
+    
+
+        .header .top .list ul.social li 
+            padding: 0 5px
+        
+
+    .header .nav .logo a 
+        font-size: 16pt
+    
+
+    .conteudo.auth 
+        margin-left: 30px
+    
+
+    .news-home 
+        width: 100%
+    
+
+    .home .destaques-home 
+        width: 90%
+        margin: 0 5%
+    
+
+        .home .destaques-home img 
+            max-width: 100%
+        
+
+    .modalDialog .block.left 
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 0px
+        border-top-right-radius: 10px
+    
+
+    .sidebar 
+        margin-top: 0px
+    
+
+    .news-related 
+        margin-top: 0px
+    
+
+    .container-center 
+        flex-direction: column
+    
+
+    .menu-right 
+        display: none
+    
+
+    .content-center 
+        padding: 20px 20px 40px 20px
+        width: 100%
+        box-sizing: border-box
+    
+

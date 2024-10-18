@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+
+{% block content %}
+<main>
+    <div class="page">
+        <div class="col center">
+            <h2>Les collectifs</h2>
+            <div class="row">
+                {% for c in section.pages %}
+                <div class="collectif card" style="max-width: min(95vw, 300px);">
+                    <a target="_blank" href="{{c.extra.link}}"><img title="{{c.title}}" src="{{c.extra.logo}}" /></a>
+                    <p>{{c.content | safe}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}
