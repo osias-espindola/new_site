@@ -1,4 +1,4 @@
-body 
+body
     font-family: Arial, sans-serif
     margin: 0
     padding: 0
@@ -7,7 +7,7 @@ body
 .container 
     max-width: 1200px
     margin: 0 auto
-    padding: 0 0px
+    padding: 100px 0px 0px 0px
 
 section 
     margin: 50px 0px 50px 0px 
@@ -22,12 +22,11 @@ section
     overflow: hidden
     position: relative
     width: 280px
-    height: 350px
+    height: 238.5px
     
    
-.card_sec01
-    padding-left: 0px
-    padding-right: 0px
+.card_sec01, .card_sec02
+    padding:  0px 0px 200px 0px
     
 .card img 
     width: 100%
@@ -39,9 +38,16 @@ section
     bottom: 0
     left: 0
     right: 0
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(35, 0, 200,)
     color: white
     padding: 10px
+    text-shadow: 3px 2px 2px #00000073
+    
+.flex-item>h3
+    text-shadow: 2px 2px 2px rgb(0 0 0 / 35%)
+
+.flex-item> p
+    text-shadow: 1px 1px 3px #0000003d
 
 .flex-container 
     display: flex
@@ -49,16 +55,20 @@ section
     justify-content: space-between
 
 .flex-item 
-    flex-basis: calc(25% - 20px)
+    
     margin-bottom: 20px
     text-align: center
     padding: 10px
-    background-color: #f0f0f0
+    background-color: #fff
     border-radius: 8px
+    width: 250px
+    height: 300px
+    box-shadow: 4px 6px 10px 1px #0000003a
 
-.icon 
+.icon_sec02,.icon_sec03
     font-size: 48px
     margin-bottom: 10px
+    filter: drop-shadow(3px 3px 3px #0000008a)
 
 .color-card 
     height: 150px
@@ -68,6 +78,7 @@ section
     position: relative
     display: flex
     align-items: center
+    box-shadow: 4px 6px 10px 1px #0000005e
 
 .color-card .number 
     position: absolute
