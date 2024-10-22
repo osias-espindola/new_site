@@ -1,6 +1,6 @@
 +++
 title = "Accueil"
-template = "custom/home.html"
+template = "custom/hometest.html"
 +++
 
 /!\ content in custom template

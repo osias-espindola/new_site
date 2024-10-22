@@ -49,7 +49,7 @@ var g_SPOffSwitches={};
 
     <!-- ===== STARTER: Additional header placeholder - overridden by asp:content on pages or page layouts  =========================== -->
     
-<link href="/sass/swiper.4.3.3.min.css" rel="stylesheet" type="text/css">
+<link href="/public/swiper.4.3.3.min.css" rel="stylesheet" type="text/css">
 <link rel="canonical" href="https://www.portaldoeleitor.pt:443/pt/Pages/default.aspx?404;http://www.portaldoeleitor.pt:80/Default.aspx"><link async="" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 
     <script src="/Style%20Library/portal/js/jquery-3.6.0.min.js" type="text/javascript" language="javascript"></script>
@@ -59,7 +59,7 @@ var g_SPOffSwitches={};
     
 
     <!-- ===== Custom CSS and JS  =================================================================================================== -->
-    <link href="/Style%20Library/portal/fonts/fontawesome-free-5.15.3/css/all.min.css" async="" rel="stylesheet"><link href="/sass/reset.css" rel="stylesheet"><link href="/sass/main.sass" async="" rel="stylesheet"><link href="/sass/nav.css" async="" rel="stylesheet"><link href="/sass/responsive.css" async="" rel="stylesheet">
+    <link href="sass\all.min.css" async="" rel="stylesheet"><link href="/public/reset.css" rel="stylesheet"><link href="/sass/main.sass" async="" rel="stylesheet"><link href="/public/nav.css" async="" rel="stylesheet"><link href="/public/responsive.css" async="" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9S6MTWQYG3"></script>
@@ -72,7 +72,7 @@ var g_SPOffSwitches={};
     </script>
 
     <script type="text/javascript" src="/_layouts/15/sp.init.js?rev=KFKNb1dEmT4CZJjiZV8KgA%3D%3DTAG0"></script><script type="text/javascript" src="/_layouts/15/sp.core.js?rev=mwmUI%2FhWdRSc8vZ%2F1nkr6A%3D%3DTAG0"></script></head><body class=" ms-backgroundImage" style="overflow-y:initial; overflow-x:hidden;"><span>
-        <link href="/sass/anonymous.css" defer="" rel="stylesheet">
+        <link href="/public/anonymous.css" defer="" rel="stylesheet">
     </span>
 
 
@@ -213,59 +213,14 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
         <!-- ===== Ribbon Code Ends Here  ======================================================================================== -->
         
         <!-- ===== Authentication / Login link hidden for everyone by anonymous users  =========================================== -->
-        <span>
-            
-<a id="ctl00_ctl55_ExplicitLogin" class="ms-signInLink" href="https://www.portaldoeleitor.pt/pt/_layouts/15/Authenticate.aspx?Source=%2FDefault%2Easpx" style="display:inline-block;">Sign In</a>
-
-        </span>
-        
-        <div id="s4-workspace" style="height: 774px; width: 1577px;">
-            <div id="s4-bodyContainer" class="portal">
-
-                 
-
-<style>
-#header-mini{display:none;}
-</style>
-
-<a class="ajuda" href="/pt/Faqs/" title="Ir para Ajuda?">
-<i class="fas fa-life-ring"><!----></i>
-<span>Ajuda?</span>
-</a>
-
-<span id="ctl00_header1_lblSearch"></span>
-
-<div id="header" class="header">
-<div class="top-container right0">
-    <div class="top">
-        <div class="language">
-            <a href="/pt/" class="selected" title="Portugês">pt</a><span>|</span><a href="/en/" title="Inglês">en</a><span>|</span><a href="/fr/" title="Francês">fr</a>
-        </div>
-        <div class="list">
-            <ul class="links">
-                <li>
-                    <a href="javascript:openModal();" onmouseover="showStartLogin();" onmouseout="hideStartLogin();" title="Ir para euEleitor">
-                        <i class="fas fa-lock"><!----></i>&nbsp;&nbsp;euEleitor
-                    </a>
-                </li>
-            </ul>
-            <div id="popup-start-login" style="display: none;">
-                <div class="up-arrow"></div>
-                <p>Aceda à sua informação sobre o Recenseamento, Situação Eleitoral e Serviços disponibilizados pela Administração Eleitoral.
-</p>
-                <a href="javascript:hideStartLogin()" title="mais tarde..." style="display: none;">mais tarde</a>
-            </div>
-        </div>
-    </div>
-    <div id="overlay" style="display: none;"></div>
-</div>
+       
 
 <div class="container">
     <div class="nav">
 
         <h1 class="logo">
             <a href="/pt/" title="Página inicial">
-                <img src="\static\logo_tetiere_site.png" alt="Logo Portal do Eleitor">Portal do Eleitor
+                <img src="/img/logo_tetiere_site.png" alt="Logo nevers">Élections Nevers
             </a>
         </h1>
 

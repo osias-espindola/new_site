@@ -1,0 +1,75 @@
+.cookie-consent 
+    position: fixed 
+    top: 0 
+    right: 0 
+    bottom: 0 
+    left: 0 
+    background: rgba(0, 0, 0, 0.6) 
+    z-index: 99999 
+    opacity: 1
+    -webkit-transition: opacity 400ms 
+        ease-in-moz-transition: opacity 400ms 
+        ease-intransition: opacity 400ms 
+        ease-inpointer-events: auto
+    display: none
+
+
+    .cookie-consent > div 
+        width: 94%
+        position: absolute
+        bottom: 0px
+        padding: 30px 3%
+        background: #fff
+        text-align: left
+        display: flex
+        align-items: center
+    
+
+    .cookie-consent .left 
+        width: 70%
+    
+
+    .cookie-consent .right 
+        flex: 1
+        width: 30%
+        text-align: center
+    
+
+        .cookie-consent .right a 
+            margin-left: 0px
+        
+
+    .cookie-consent .titulo 
+        font-size: 1.2rem
+        font-weight: bold
+    
+
+    .cookie-consent .descricao 
+        font-size: 0.9rem
+    
+
+        .cookie-consent .descricao a 
+            text-decoration: underline
+        
+
+            .cookie-consent .descricao a:hover 
+                text-decoration: none
+            
+
+@media (max-width: 768px) 
+    .cookie-consent > div 
+        display: block
+    
+
+    .cookie-consent .left 
+        display: block
+        width: 100%
+    
+
+    .cookie-consent .right 
+        display: block
+        margin-top: 30px
+        width: 100%
+        text-align: left
+    
+
