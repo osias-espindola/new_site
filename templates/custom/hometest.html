@@ -1,11 +1,16 @@
-{% extends "index.html" %} 
-{% block keywords %}<meta name="keywords" content="test, Zola, Theme" />{% endblock keywords %}
-
-{% block header %}
+{% extends "index.html" %} {% block keywords %}<meta
+  name="keywords"
+  content="test, Zola, Theme"
+/>{% endblock keywords %} {% block header %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<div class="hero hero-home col center" style="background-image: url(/processed_images/vote-internet_p.6148cb328e0372ec.jpg); min-height: 60vh;">
-    <h1>Résultat des élections
-    </h1>
+<div
+  class="hero hero-home col center"
+  style="
+    background-image: url(/processed_images/vote-internet_p.6148cb328e0372ec.jpg);
+    min-height: 60vh;
+  "
+>
+  <h1>Résultat des élections</h1>
 </div>
 <!-- carousel -->
 <!-- <div class='container_form'>
@@ -16,99 +21,121 @@
 </div>
 <script src="/javascript/carousel.js"></script>
    -->
-{% endblock header %}
-
-{% block extrahead %}
+{% endblock header %} {% block extrahead %}
 <!-- <link rel="stylesheet" type="text/css" href="/css/mastodon-timeline.css"> -->
-<link rel="stylesheet" type="text/css" href="/home_test.css">
+<link rel="stylesheet" type="text/css" href="/home_test.css" />
 <!-- <script src="/javascript/mastodon-timeline.js"></script> -->
 <script src="/javascript/carousel.js"></script>
 
-{% endblock extrahead %}
-
-  {% block content %}
-  <div class="container">
-    <!-- Section 1: 4 cartes avec image et description d'arrière-plan-->
-    <section class="card_sec01">
-      <div class="grid">
-        <div class="card_home">
-          <img src="/img/img_bureau.png" alt="Card 1" />
-          <div class="card-overlay">
-            <p>Descrição do Card 1</p>
-          </div>
-        </div>
-        <div class="card_home">
-          <img src="/img/eureeeo_0.jpeg" alt="Card 2" />
-          <div class="card-overlay">
-            <p>Descrição do Card 2</p>
-          </div>
-        </div>
-        <div class="card_home">
-          <img src="/img/procuration_p.jpg" alt="Card 3" />
-          <div class="card-overlay">
-            <p>Descrição do Card 3</p>
-          </div>
-        </div>
-        <div class="card_home">
-          <img src="/img/machine-a-voter_p.jpg" alt="Card 4" />
-          <div class="card-overlay">
-            <p>Descrição do Card 4</p>
-          </div>
+{% endblock extrahead %} {% block content %}
+<div class="container">
+  <!-- Section 1: 4 cartes avec image et description d'arrière-plan-->
+  <section class="card_sec01">
+    <div class="grid">
+      <div class="card_home">
+        <img src="/img/img_bureau.png" alt="Card 1" />
+        <div class="card-overlay">
+          <p>Descrição do Card 1</p>
         </div>
       </div>
-    </section>
-
-    <!-- Section 2: 4 cartes moyennes alignées horizontalement -->
-    <section class="card_sec02">
-      <div class="flex-container">
-        <div class="flex-item">
-          <div class="icon_sec02"><div class="icon-search">{{i::search(color="black", size="20px")}}</div></div>
-          <h3>Título 1</h3>
-          <p>Pequena descrição do card 1</p>
-        </div>
-        <div class="flex-item">
-          <div class="icon_sec02"><div class="vote">{{i::vote(color="black", size="20px")}}</div></div>
-          <h3>Título 2</h3>
-          <p>Pequena descrição do card 2</p>
-        </div>
-        <div class="flex-item">
-          <div class="icon_sec02"><div class="map_pin">{{i::map_pin(color="black", size="20px")}}</div></div>
-          <h3>Título 3</h3>
-          <p>Pequena descrição do card 3</p>
-        </div>
-        <div class="flex-item">
-          <div class="icon_sec02"><div class="squere_check">{{i::square_check(color="black", size="20px")}}</div></div>
-          <h3>Título 4</h3>
-          <p>Pequena descrição do card 4</p>
+      <div class="card_home">
+        <img src="/img/eureeeo_0.jpeg" alt="Card 2" />
+        <div class="card-overlay">
+          <p>Descrição do Card 2</p>
         </div>
       </div>
-    </section>
-
-    <!-- Section 3: 4 Cartes rectangulaires colorées -->
-    <section class="card_sec03">
-      <div class="grid">
-        <div class="color-card" style="background-color: #00bd9e">
-          <span class="icon_sec03"><div class="notebook_pen">{{i::notebook_pen(color="black", size="20px")}}</div></span>
-          <span class="number">1</span>
-          <p class="description">Descrição do Card 1</p>
-        </div>
-        <div class="color-card" style="background-color: rgb(255, 193, 0)">
-          <span class="icon_sec03"><div class="users">{{i::users(color="black", size="20px")}}</div></span>
-          <span class="number">2</span>
-          <p class="description">Descrição do Card 2</p>
-        </div>
-        <div class="color-card" style="background-color: rgb(125, 189, 255)">
-          <span class="icon_sec03"><div class="bell">{{i::bell(color="black", size="20px")}}</div></span>
-          <span class="number">3</span>
-          <p class="description">Descrição do Card 3</p>
-        </div>
-        <div class="color-card" style="background-color: rgb(252, 92, 72)">
-          <span class="icon_sec03"><div class="landmark">{{i::landmark(color="black", size="20px")}}</div></span>
-          <span class="number">4</span>
-          <p class="description">Descrição do Card 4</p>
+      <div class="card_home">
+        <img src="/img/procuration_p.jpg" alt="Card 3" />
+        <div class="card-overlay">
+          <p>Descrição do Card 3</p>
         </div>
       </div>
-    </section>
-  </div>
-  {% endblock content %}
+      <div class="card_home">
+        <img src="/img/machine-a-voter_p.jpg" alt="Card 4" />
+        <div class="card-overlay">
+          <p>Descrição do Card 4</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Section 2: 4 cartes moyennes alignées horizontalement -->
+  <section class="card_sec02">
+    <div class="flex-container">
+        <div class="background_form"></div>
+      <div class="flex-item">
+        <div class="icon_sec02">
+          <div class="icon-search">
+            {{i::search(color="black", size="20px")}}
+          </div>
+        </div>
+        <h3>Título 1</h3>
+        <p>Pequena descrição do card 1</p>
+      </div>
+      <div class="flex-item">
+        <div class="icon_sec02">
+          <div class="vote">{{i::vote(color="black", size="20px")}}</div>
+        </div>
+        <h3>Título 2</h3>
+        <p>Pequena descrição do card 2</p>
+      </div>
+      <div class="flex-item">
+        <div class="icon_sec02">
+          <div class="map_pin">{{i::map_pin(color="black", size="20px")}}</div>
+        </div>
+        <h3>Título 3</h3>
+        <p>Pequena descrição do card 3</p>
+      </div>
+      <div class="flex-item">
+        <div class="icon_sec02">
+          <div class="squere_check">
+            {{i::square_check(color="black", size="20px")}}
+          </div>
+        </div>
+        <h3>Título 4</h3>
+        <p>Pequena descrição do card 4</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: 4 Cartes rectangulaires colorées -->
+  <section class="card_sec03">
+    <div class="grid">
+      <div class="color-card" style="background-color: rgb(255, 193, 0)">
+        <span class="icon_sec03"
+          ><div class="users">
+            {{i::users(color="black", size="20px")}}
+          </div></span
+        >
+        <span class="number">1</span>
+        <p class="description">Nombre de certificats d'électeur délivrés</p>
+      </div>
+      <div class="color-card" style="background-color: #00bd9e">
+        <span class="icon_sec03"
+          ><div class="notebook_pen">
+            {{i::notebook_pen(color="black", size="20px")}}
+          </div></span
+        >
+        <span class="number">2</span>
+        <p class="description">Nombre d'électeurs inscrits</p>
+      </div>
+      <div class="color-card" style="background-color: rgb(125, 189, 255)">
+        <span class="icon_sec03"
+          ><div class="bell">{{i::bell(color="black", size="20px")}}</div></span
+        >
+        <span class="number">3</span>
+        <p class="description">Nombre de notifications enregistrées</p>
+      </div>
+      <div class="color-card" style="background-color: rgb(252, 92, 72)">
+        <span class="icon_sec03"
+          ><div class="landmark">
+            {{i::landmark(color="black", size="20px")}}
+          </div></span
+        >
+        <span class="number">4</span>
+        <p class="description">Nombre d'inscriptions actives</p>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock content %}
