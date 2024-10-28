@@ -3,6 +3,18 @@ body
     margin: 0
     padding: 0
     box-sizing: border-box
+
+a
+    text-decoration: none
+    color: inherit
+    display: block
+
+a:hover, a:focus, a:active 
+    color: inherit !important
+    text-decoration:none 
+    
+
+
         
 .container 
     max-width: 1200px
@@ -22,13 +34,16 @@ section
 
 .card_home 
     border-radius: 8px
-    overflow: hidden
+    overflow: hidden /*evita que qualquer conteúdo que ultrapasse o tamanho do contêiner seja exibido*/
     position: relative
-   
     height: 238.5px
     box-shadow: 1px 1px 2px 1px black
-    
+    transition: transform 0.5s ease
 
+.card_home:hover
+    transform: scale(1.05)
+    transition: transform 0.2s ease
+    
 
 .card_home img 
     width: 100%
@@ -78,7 +93,7 @@ flex-container-sec01
     z-index: 0
 
 .flex-item 
-    
+    color: black
     margin-bottom: 20px
     text-align: center
     padding: 10px
@@ -88,7 +103,12 @@ flex-container-sec01
     height: 300px
     box-shadow: 4px 6px 10px 1px #0000003a
     z-index: 0
+    transition: transform 0.3s ease
     
+.flex-item:hover
+    transform: translate(0px, -20px) scale(1.05)
+    transition: transform 0.2s ease
+
 .icon_sec02
     font-size: 48px
     margin-bottom: 10px
@@ -102,10 +122,16 @@ flex-container-sec01
     rotate: 25deg
     width: 459px
     filter: drop-shadow(10px 10px 10px #0000008a)
+
     
 .card_sec02
-      
 
+.icon_sec03, .number, .description
+    color: inherit
+
+.icon_sec03:hover, .number:hover, .description:hover
+    color: inherit !important
+     
 .color-card 
     height: 150px
     border-radius: 8px
@@ -115,7 +141,12 @@ flex-container-sec01
     display: flex
     align-items: center
     box-shadow: 4px 6px 10px 1px #0000005e
-    
+    overflow: hidden
+    transition: transform 0.4s ease
+
+a.color-card:hover
+    transform: scale(1.05)
+    transition: transform 0.4s ease
 
 .color-card .number 
     position: absolute
