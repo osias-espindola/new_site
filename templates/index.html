@@ -59,6 +59,7 @@
     <link rel="stylesheet" type="text/css" href="/img_page.css"/>
     <link rel="stylesheet" type="text/css" href="/carousel.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/javascript/nav.js"></script>
 
     {# add canonical url if the website is served at multiple places #}
     {%- if page -%}
@@ -77,12 +78,12 @@
     {%- else -%}
         <meta property="og:image" content="{{config.extra.logo}}"/>
     {%- endif %}
-    <link rel="shortcut icon" href="/img/logo_n_nevers_favicon.ico" background_color="white" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/logo_n_nevers_favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
-    {% include "nav.html" %}
+    {% include "nav copy.html" %}
     {% block header %}{% endblock header %}
     {% block content %}{% endblock content %}
     {% include "footer.html" %}

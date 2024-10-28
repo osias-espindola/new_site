@@ -1,0 +1,160 @@
+#menu 
+    background: #2300C8
+    height: 41px
+    padding-right: 18px
+    border-radius: 0px
+
+    ul, li 
+        margin: 0 auto
+        padding: 0
+        list-style: none
+    
+
+    ul 
+        width: 100%
+        text-align: right
+    
+
+    li 
+        display: inline-block
+        position: relative
+    
+
+    a
+        display: block
+        line-height: 41px
+        padding: 0 14px
+        text-decoration: none
+        color: #FFFFFF
+        font-size: 20px
+
+        .dropdown-arrow:after 
+            content: "\25BE"
+            margin-left: 5px
+        
+    
+
+    li a:hover 
+        color: #ffffff
+        background: #f2f2f250
+        font-style: italic
+        font-size: 22px
+
+    input 
+        display: none
+        margin: 0
+        padding: 0
+        height: 41px
+        width: 10%
+        opacity: 0
+        cursor: pointer
+        
+    
+
+    label 
+        display: none
+        line-height: 41px
+        text-align: right
+        position: absolute
+        right: 20px
+        transition: transform 0.3s ease
+        transform-origin: center
+
+        &:before 
+            font-size: 1.9em
+            color: #FFFFFF
+            content: "\2261"
+            margin-right: 20px
+            transition: transform 0.3s ease 
+            transform-origin: center
+        
+    
+
+    ul.sub-menus 
+        height: auto
+        overflow: hidden
+        width: 170px
+        background: #2300c861
+        position: absolute
+        z-index: 99
+        display: none
+
+        li 
+            display: block
+            text-align: left
+            width: 100%
+        
+
+        a 
+            color: #FFFFFF
+            font-size: 22px
+        
+    
+
+    li:hover ul.sub-menus 
+        display: block
+    
+
+    ul.sub-menus a:hover 
+        background: #f2f2f250
+        color: #fff
+        
+    
+
+    @media screen and (max-width: 800px) 
+        position: relative
+
+        ul 
+            background: #2300c8b5
+            position: absolute
+            top: 100%
+            right: 0
+            left: 0
+            z-index: 3
+            height: auto
+            display: none
+            text-align: left
+        
+
+        ul.sub-menus 
+            width: 100%
+            position: static
+        
+
+        ul.sub-menus a 
+            padding-left: 30px
+        
+
+        li 
+            display: block
+            float: none
+            width: auto
+        
+
+        input, label 
+            position: absolute
+            top: 0
+            right: 18px
+            display: block
+            
+        
+
+        input 
+            z-index: 4
+        
+
+        input:checked + label 
+            color: #FFFFFF
+            
+            &:before 
+                content: "\00d7"
+            transform: rotateX(380deg)
+            transform-origin: center
+            
+        
+
+        input:checked ~ ul 
+            display: block
+        
+    
+
