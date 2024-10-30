@@ -42,7 +42,7 @@ n_articles = 5
 [extra.nav]
 links = [
     #"_index.md",
-    "../content/blog/incription.md",
+    "../content/blog/inscription.md",
     "../content/blog/procuration.md",
     "../content/blog/vote_electronique.md",
     "../content/blog/bureau_d_vote.md",
