@@ -4,6 +4,9 @@ description = "Vote électronique : comment ça marche ?"
 date = 2024-10-07
 extra.thumbnail = "../../static/img/machine-a-voter_p.jpg"
 +++
+
+<center>
+
 ---
 
 # **Vote électronique : comment ça marche ?**
@@ -11,6 +14,8 @@ extra.thumbnail = "../../static/img/machine-a-voter_p.jpg"
 ---
 
 ![machine-a-voter](/img/machine-a-voter_p.jpg "machine-a-voter")
+
+</center>
 
 #### **Réglementation sur le déroulement de la journée de vote**
 

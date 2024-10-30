@@ -4,13 +4,18 @@ description = "Comment trouver mon bureau de vote ?"
 date = 2024-10-04
 extra.thumbnail = "../../static/img/img_bureau.png"
 +++
+
+<center>
+
 -- --
 
-#### Comment trouver mon bureau de vote ?
+# Comment trouver mon bureau de vote ?
 
 -- --
 
 ![carte des bureau de vote](/img/img_bureau.png "carte des bureau de vote")
+
+</center>
 
 **Nevers compte 25 bureaux de vote répartis comme suit :**
 

@@ -8,6 +8,8 @@ template = "page.html"
 
 +++
 
+<center>
+
 ---
 
 # Inscription sur les listes électorales
@@ -15,6 +17,8 @@ template = "page.html"
 ---
 
 ![imagem carte électoral](/img/eureeeo_0.jpeg "imagem carte électoral")
+
+</center>
 
 Pour pouvoir voter aux élections législatives, il faut être inscrit sur les listes électorales.
 Cette inscription est automatique pour les jeunes de 18 ans qui ont fait leur recensement.
