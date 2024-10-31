@@ -14,13 +14,11 @@ extra.thumbnail = "../../static/GRAFICO.jpg"
 
 ![imagem procuration](/img/vote-internet-legislatives-2022-royaume-uni-.jpg "Image clavier touche avec drapeau de france et autre avec mot vote")
 
-### Législatives 2024 - Résultats tour 2<sup>nd</sup> et 1<sup>er</sup> tour
+</center>
 
----
+### **Législatives 2024 - Résultats tour 2<sup>nd</sup> et 1<sup>er</sup> tour**
 
 <br><br>
-
-</center>
 
 <a href="https://www.archives-resultats-elections.interieur.gouv.fr/resultats/legislatives2024/ensemble_geographique/27/58/5801/58194/index.php" target="_blank">Résultats* au 2nd tour</a>
 

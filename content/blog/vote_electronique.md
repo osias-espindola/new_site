@@ -9,7 +9,7 @@ extra.thumbnail = "../../static/img/machine-a-voter_p.jpg"
 
 ---
 
-# **Vote électronique : comment ça marche ?**
+# Vote électronique : comment ça marche ?
 
 ---
 
@@ -17,7 +17,7 @@ extra.thumbnail = "../../static/img/machine-a-voter_p.jpg"
 
 </center>
 
-#### **Réglementation sur le déroulement de la journée de vote**
+### **Réglementation sur le déroulement de la journée de vote**
 
 L'utilisation de machines à voter modifie le déroulement de la journée de scrutin. En particulier, le Président du bureau de vote détiendrait plusieurs codes de sécurité ainsi qu'une clé électronique.
 
@@ -49,7 +49,7 @@ Le matin du scrutin, les membres du bureau essayent de vérifier le fonctionneme
 
 <br>
 
-#### Rôle du citoyen
+### Rôle du citoyen
 **Le vote électronique, en France, s'effectue en plusieurs étapes:**
 
 - le président active la machine, à l'aide d'un « boîtier interactif portable (BIP) unique »

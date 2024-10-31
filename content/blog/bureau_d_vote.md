@@ -17,7 +17,7 @@ extra.thumbnail = "../../static/img/img_bureau.png"
 
 </center>
 
-**Nevers compte 25 bureaux de vote répartis comme suit :**
+### **Nevers compte 25 bureaux de vote répartis comme suit :**
 
 - [Palais ducal - Salle Fernand Chalandre (bureaux N°1 et N°2)](https://maps.app.goo.gl/9ea7Rz1hL8vavVNk9 "Palais ducal - Salle Fernand Chalandre (bureaux N°1 et N°2)")
     <details>

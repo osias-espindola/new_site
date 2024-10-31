@@ -87,7 +87,7 @@ flex-container-sec01
     width: 100%
     height: 100%
     left: 0
-    transform: translate(0px, -75px)
+    transform: translate(0px, -90px)
     background: rgb(2,0,36)
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 60%)
@@ -181,24 +181,32 @@ a.color-card:hover
     text-align: center
 
 .card-color-bg
+    width: 100%
+    height: 100%
+    left: 0
+    transform: translate(0px, -190px)
     background: rgba(0, 0, 0, 0.05)
-    width: 70%
-    
-    height: 1000px
     position: absolute
-    overflow: hidden
+    
+    
+    
     
 
 .text_bg02
     overflow: hidden
-    width: 70%
+    
     margin: 0px 40px 40px 100px
+    word-wrap: break-word
+    
 
 .text_bg02 h1
     overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
 
 .text_bg02 p
     overflow: hidden
+    word-wrap: break-word
     
    
     
@@ -208,10 +216,10 @@ a.color-card:hover
 @media screen and (min-width:600px)
 .card-color-bg
     
-    width: 1580px
-    transform: translate(-190px, -59px)
-    height: 279px
-    position: absolute
+    *width: 1580px
+    *transform: translate(-190px, -59px)
+    *height: 279px
+    *position: absolute
 
 @media (320px<= whidth) 
 
