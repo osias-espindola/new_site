@@ -1,23 +1,26 @@
-<nav id='menu'>
+<nav class="" id='menu'>
+  <a href="{{get_url(path="/")}}"><img src="/img/logo_nevers_white.png" alt="logo Nevers" style=" font-size: 3em;position: absolute;top: -0.1em; left: 0.4em; z-index: 1;"></a>
   <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
   <ul>
-    <li><a href='http://'>Home</a></li>
-    <li><a class='dropdown-arrow' href='http://'>Products</a>
-      <ul class='sub-menus'>
+    <li><a href='{{get_url(path="/")}}'>Home</a></li>
+
+    <li><a class='dropdown-arrow item {% if current_path %}{% if current_path == "/" %} active{% endif %}{% endif %}' href='/blog/inscription/'>Inscription</a>
+      <!-- <ul class='sub-menus'>
         <li><a href='http://'>Products 1</a></li>
         <li><a href='http://'>Products 2</a></li>
         <li><a href='http://'>Products 3</a></li>
         <li><a href='http://'>Products 4</a></li>
-      </ul>
+      </ul> -->
     </li>
-    <li><a href='http://'>About</a></li>
-    <li><a class='dropdown-arrow' href='http://'>Services</a>
-      <ul class='sub-menus'>
+    <li><a href='/blog/procuration'>Procuration</a></li>
+    <li><a href='/blog/vote-electronique'>Vote électronique</a></li>
+    <li><a class='dropdown-arrow' href='/blog/bureau-d-vote'>Bureau de vote</a>
+      <!-- <ul class='sub-menus'>
         <li><a href='http://'>Services 1</a></li>
         <li><a href='http://'>Services 2</a></li>
         <li><a href='http://'>Services 3</a></li>
-      </ul>
+      </ul> -->
     </li>
-    <li><a href='http://'>Contact Us</a></li>
+    <li><a href='/blog/result-election'>Result des élection</a></li>
   </ul>
 </nav>

@@ -1,0 +1,55 @@
+<nav class="navbar">
+  <!-- logo -->
+  <img src="/img/logo_nevers_white.png" alt="logo Nevers" style="font-size: 3em; position: absolute; top: -0.1em; left: 0.4em; z-index: 1;">
+  <!-- Home Button -->
+  <a href="{{get_url(path="/")}}" class="item {% if current_path %}{% if current_path == "/" %} active{% endif %}{% endif %}">
+      <div>{{config.extra.name}}</div>
+  </a>
+
+  <!-- Hamburger Menu Icon -->
+  <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+  
+  <!-- Menu Links -->
+  <div class="nav-links" id="nav-links">
+      {%- for link in config.extra.nav.links %}
+      {%- if link is ending_with("_index.md") -%}
+          {%- set s = get_section(path=link) -%}
+          {%- if not s.extra.hide -%}
+          <div class="dropdown">
+              <a href="{{s.permalink}}" class="dropper 
+              {%- if current_path %}{% if current_path is starting_with(s.path) %} active{% endif %}{% endif -%}">{{s.title}} 
+              {%- if s.extra.no_list_pages %}{# nothing #}{% else %}{{i::caret_down(color="white")}}{% endif %}</a>
+              <div class="dropdown-content">
+                  {%- for sec in s.subsections -%}
+                  {%- set sec = get_section(path=sec) -%}
+                  <a href="{{sec.permalink}}"><span>{{sec.title}}</span></a>
+                  {% endfor -%}
+                  {% if s.extra.no_list_pages %}{# nothing #}{% else %}
+                      {%- for page in s.pages -%}
+                      <a href="{{page.permalink}}"><span>{{page.title}}</span></a>
+                      {% endfor -%}
+                  {% endif %}
+              </div>
+          </div>
+          {%- endif -%}
+      {% else %}
+          {%- set p = get_page(path=link) -%}
+          {%- if not p.extra.hide -%}
+          <a href="{{ p.permalink }}" class="item 
+          {%- if current_path %}{% if current_path == p.path %} active{% endif %}{% endif -%}
+          "><div>{{p.title}}</div></a>
+          {%- endif -%}
+      {% endif %}
+      {% endfor %}
+  </div>
+</nav>
+<script>
+  document.getElementById("hamburger").onclick = function() {
+      var navLinks = document.getElementById("nav-links");
+      navLinks.classList.toggle("active");
+  }
+</script>

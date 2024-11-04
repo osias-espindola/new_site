@@ -1,11 +1,16 @@
 <nav class="">
-  {# --- home button --- -#}
+  {# --- logo --- -#}
     <img src="/img/logo_nevers_white.png" alt="logo Nevers" style=" font-size: 3em;position: absolute;top: -0.1em; left: 0.4em; z-index: 1;">
+
+  {# --- home button --- -#}
+    
     <a href="{{get_url(path="/")}}" class="item {% if current_path %}{% if current_path == "/" %} active{% endif %}{% endif %}"><div>{{config.extra.name}}</div></a>
     
     {# --- menu links --- -#}
     {%- for link in config.extra.nav.links %}
+
     {#- hack to get page or section #}
+    
     {%- if link is ending_with("_index.md") -%}
       {%- set s = get_section(path=link) -%}
       {%- if not s.extra.hide -%}

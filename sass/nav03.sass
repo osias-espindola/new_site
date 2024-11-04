@@ -1,0 +1,68 @@
+/* Navbar base styles */
+.navbar 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px
+    background-color: #333
+
+.item
+    z-index: 1
+
+/* Hamburger Menu */
+.hamburger 
+    display: none
+    flex-direction: column
+    cursor: pointer
+    z-index: 2
+
+
+.hamburger span 
+    height: 3px
+    width: 25px
+    background: white
+    margin: 4px
+    border-radius: 5px
+
+
+/* Navigation Links */
+.nav-links 
+    display: flex
+    align-items: center
+
+
+.nav-links a 
+    color: white
+    text-decoration: none
+    margin: 0 10px
+
+
+.dropdown-content a 
+    display: block
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) 
+    .hamburger 
+        display: flex
+    
+
+    .nav-links 
+        display: none
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        flex-direction: column
+        background-color: #333
+    
+
+    .nav-links a 
+        margin: 10px 0
+        text-align: center
+    
+
+    .nav-links.active 
+        display: flex
+    
+
