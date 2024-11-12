@@ -1,16 +1,69 @@
-{% extends "index.html" %}
+{% extends "index.html" %} {% block title %}<title>
+  {{config.extra.name}} | 404</title
+>{% endblock title %} {% block content %}
+<style>
+  /*======================
+        404 page
+    =======================*/
 
-{% block title %}<title>{{config.extra.name}} | 404</title>{% endblock title %}
+  .page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+  }
 
-{% block content %}
+  .page_404 img {
+    width: 100%;
+  }
+
+  .four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+  }
+
+  .four_zero_four_bg h1 {
+    font-size: 80px;
+  }
+
+  .four_zero_four_bg h3 {
+    font-size: 80px;
+  }
+
+  .link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #2300c8;
+    margin: 20px 0;
+    display: inline-block;
+  }
+  .contant_box_404 {
+    margin-top: -50px;
+  }
+</style>
 <main class="page">
-    <h1>404 - page not found</h1>
-    <span id="url"></span>
-    <p>L'URL ci-dessus ne conduit à aucune page connue.</p>
+  <h1>404 - page not found</h1>
+  <span id="url"></span>
+  <p>L'URL ci-dessus ne conduit à aucune page connue.</p>
+  <div class="col-sm-12">
+    <div class="col-sm-10 col-sm-offset-1 text-center">
+      <div class="four_zero_four_bg">
+        <h1 class="text-center"></h1>
+      </div>
+
+      <div class="contant_box_404">
+        <h3 class="h2">On dirait que vous êtes perdu</h3>
+
+        <p>La page que vous recherchez n’est pas disponible !</p>
+
+        <a href="/" class="link_404">Aller à Home</a>
+      </div>
+    </div>
+  </div>
 </main>
 
 <script>
-var span_url = document.getElementById("url");
-span_url.innerHTML = document.location.href;
+  var span_url = document.getElementById("url");
+  span_url.innerHTML = document.location.href;
 </script>
 {% endblock content %}
