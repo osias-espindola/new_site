@@ -1,121 +1,169 @@
-{% extends "index.html" %}
+{% extends "index.html" %} 
 
-{% block keywords %}
-<meta name="keywords" content="test, Zola, Theme">{% endblock keywords %}
+{% block keywords %}<meta name="keywords" content="test, Zola, Theme" />{% endblock keywords %} 
 
 {% block header %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<div class="hero hero-home col center" style="background-image: url(/processed_images/vote-internet_p.6148cb328e0372ec.jpg); min-height: 60vh;">
-    <h1>Résultat des élections
-    </h1>
-</div>
+<script src="/javascript/carousel.js"></script>
+
+<!-- <div
+  class="hero hero-home col center"
+  style="background-image: url(/img/vote-internet-legislatives-2022-royaume-uni-.jpg);min-height: 60vh;"
+>
+  <h1>Résultat des élections</h1>
+</div> -->
 <!-- carousel -->
-<!-- <div class='container_form'>
+
+<div class='container_form'>
     <div class='left'></div>
     <div class='right'>
        <div class="carousel-container"></div>
     </div>
 </div>
-<script src="/javascript/carousel.js"></script>
-   -->
-{% endblock header %}
+
+ 
+{% endblock header %} 
 
 {% block extrahead %}
 <!-- <link rel="stylesheet" type="text/css" href="/css/mastodon-timeline.css"> -->
+
+<link rel="stylesheet" type="text/css" href="/home_test.css" />
 <!-- <script src="/javascript/mastodon-timeline.js"></script> -->
 <script src="/javascript/carousel.js"></script>
 
-{% endblock extrahead %}
+{% endblock extrahead %} 
 
 {% block content %}
-<main>
-        <!-- <div class="page">
-
-            <div class="textimage" style="min-height: 30vh;">
-                <img alt="logo" src="/img/gull.svg" style="max-width: 200px;" />
-                <div class="quote">
-                    <q>Seagull is my most complete Zola theme</q>
-                    <p>The author</p>
-                </div>
-            </div> -->
-
-            <div class="col center">
-                <div style="max-width: min(95vw, 600px);">
-                    <!-- <p>Seagull is a Zola theme designed for complete websites. It has a lot of features and a lot of customization options.</p>
-                    <p>The theme was designed in parallel on <a href="https://scientifiquesenrebellion.fr/">Scientifiques en Rebellion</a> website and <a href="https://labasetoulouse.fr/">La BASE Toulouse</a> website. It was then <em>refactored</em> into a single theme to make maintainance easier.</p> -->
-                </div>
+<div class="container">
+  <!-- Section 1: 4 cartes avec image et description d'arrière-plan-->
+  <section class="card_sec01">
+    <div class="flex-container-sec01">
+      <div class="grid">
+        <div class="card_home">
+          <a href="/blog/bureau-d-vote/">
+            <img src="/img/img_bureau.png" alt="Card 1" />
+            <div class="card-overlay">
+              <p>Bureau de vote</p>
             </div>
+          </a>
         </div>
-
-        <div class="hero" style="background-image:url(/processed_images/vote-internet_p.6148cb328e0372ec.jpg);">
-            <div class="col center" style="background-color: rgba(0, 0, 0, 0.5); padding: 2em; color: white;">
-                <div style="max-width: 800px; background-color: rgba(222, 245, 255, 1); border-radius: 100%;">
-                    <!-- <img src="/img/gull.svg"/> -->
-                </div>
-                <!-- <h3 style="margin-bottom: 0;">The seagull is chasing</h3>
-                <h3>she likes fish a lot</h3>
-                <a class="button button-orange" style="border-radius: 2em;" href="#">Read more</a> -->
+        <div class="card_home">
+          <a href="/blog/inscription/">
+            <img src="/img/eureeeo_0.jpeg" alt="Card 2" />
+            <div class="card-overlay">
+              <p>Inscription électorales</p>
             </div>
+          </a>
         </div>
-
-        <div class="page">
-            <div class="col center">
-                <div style="max-width: min(95vw, 600px);">
-                    <!-- <h4>Want to know more about Zola?</h4>
-                    <ul>
-                        <li>Read the official website <a href="https://www.getzola.org/">getzola.org</a></li>
-                        <li>Take a look at the <a href="https://www.getzola.org/documentation/">documentation</a></li>
-                        <li>Browse the <a href="https://zola.discourse.group/">forum</a></li>
-                        <li>Or pick a theme in the <a href="https://www.getzola.org/themes/">gallery</a></li>
-                    </ul>
-
-                    <h4>Contribute to this theme</h4>
-
-                    <p>You can contribute to this theme by asking questions about this theme on the forum tagging <a href="https://zola.discourse.group/u/hugotrentesaux/summary">@HugoTrentesaux</a></p>
-
-                    <p class="col center">
-                        <a class="button button-main" href="https://git.42l.fr/HugoTrentesaux/seagull">Source code</a>
-                    </p> -->
-                </div>
+        <div class="card_home">
+          <a href="/blog/procuration/">
+            <img src="/img/procuration_p.jpg" alt="Card 3" />
+            <div class="card-overlay">
+              <p>Procuration</p>
             </div>
-
-            <hr class="fade1">
+          </a>
         </div>
-
-        <div class="row center" style="align-items: start;">
-            <div class="col center" style="max-width: min(95vw, 900px);">
-                <!-- <h4>Last blog posts</h4>
-                {% set posts = get_section(path="blog/_index.md") -%}
-                <ul>
-                    {%- for article in posts.pages | slice(end=config.extra.homepage.n_articles) %}
-                    <li><a href="{{article.permalink}}">{{ article.title }}</a> {{ macros::date(date=article.date, icon=false) }}</li>
-                    {%- endfor %}
-                </ul>
-
-                <h4>Gull picture</h4>
-                <div class="row center">
-                    <img alt="map" src="/img/gull.svg" style="width: min(95vw, 600px);" />
-                </div>
+        <div class="card_home">
+          <a href="/blog/vote-electronique/">
+            <img src="/img/machine-a-voter_p.jpg" alt="Card 4" />
+            <div class="card-overlay">
+              <p>Vote électronique</p>
             </div>
-
-            <div class="col" style="max-width: min(95vw, 500px);">
-                 script loading mastodon timeline
-                <div class="mt-timeline">
-                    <div id="mt-body" class="mt-body" role="feed">
-                        <div class="loading-spinner"></div>
-                    </div> -->
-                </div>
-            </div>
+          </a>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Section 2: 4 cartes moyennes alignées horizontalement -->
+  <section class="card_sec02">
+    <div class="background_form">
+      <div class="text_bg">
+        <h1>Services</h1>
+        <p>Liste des services disponibles dans l'espace réservé aux électeurs</p>
+      </div>
+    </div>
+    <div class="flex-container">
 
+      <a href="link1.html" class="flex-item">
+        <div class="icon_sec02">
+          <div class="icon-search">
+            {{i::search(color="black", size="20px")}}
+          </div>
+        </div>
+        <h3>Titre 1</h3>
+        <p>Petite description de la carte 1</p>
+      </a>
 
+      <a href="link2.html" class="flex-item">
+        <div class="icon_sec02">
+          <div class="vote">{{i::vote(color="black", size="20px")}}</div>
+        </div>
+        <h3>Titre 2</h3>
+        <p>Petite description de la carte 2</p>
+      </a>
 
-        <br>
-        <br>
-        <br>
+      <a href="link3.html" class="flex-item">
+        <div class="icon_sec02">
+          <div class="map_pin">{{i::map_pin(color="black", size="20px")}}</div>
+        </div>
+        <h3>Titre 3</h3>
+        <p>Petite carte Description 3</p>
+      </a>
 
+      <a href="link4.html" class="flex-item">
+        <div class="icon_sec02">
+          <div class="square_check">
+            {{i::square_check(color="black", size="20px")}}
+          </div>
+        </div>
+        <h3>Titre 4</h3>
+        <p>Petite description de la carte 4</p>
+      </a>
+    </div>
+  </section>
 
-</main>
+  <!-- Section 3: 4 Cartes rectangulaires colorées -->
+  <section class="card_sec03">
+    <div class="grid">
+        <div class="card-color-bg">
+          <div class="text_bg02">
+            <h1>Données statistiques</h1><p>Données statistiques relatives à l'utilisation des services mis à la disposition des électeurs.</p>
+          </div>
+        </div>
+      <a href="#" class="color-card" style="background-color: rgb(255, 193, 0)">
+        <span class="icon_sec03">
+          <div class="users">{{i::users(color="black", size="20px")}}</div>
+        </span>
+        <span class="number">1</span>
+        <p class="description">Nombre de certificats d'électeur délivrés</p>
+      </a>
+      <a href="#" class="color-card" style="background-color: #00bd9e">
+        <span class="icon_sec03">
+          <div class="notebook_pen">
+            {{i::notebook_pen(color="black", size="20px")}}
+          </div>
+        </span>
+        <span class="number">2</span>
+        <p class="description">Nombre d'électeurs inscrits</p>
+      </a>
+      <a href="#" class="color-card" style="background-color: rgb(125, 189, 255)">
+        <span class="icon_sec03">
+          <div class="bell">{{i::bell(color="black", size="20px")}}</div>
+        </span>
+        <span class="number">3</span>
+        <p class="description">Nombre de notifications enregistrées</p>
+      </a>
+      <a href="#" class="color-card" style="background-color: rgb(252, 92, 72)">
+        <span class="icon_sec03">
+          <div class="landmark">
+            {{i::landmark(color="black", size="20px")}}
+          </div>
+        </span>
+        <span class="number">4</span>
+        <p class="description">Nombre d'inscriptions actives</p>
+      </a>
+    </div>
+  </section>
+</div>
 {% endblock content %}
-
