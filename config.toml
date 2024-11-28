@@ -31,7 +31,7 @@ highlight_code = true
 # Put all your custom variables here
 name = "Élections Nevers"
 logo = "static/logo_tetiere_site.png"
-description = "Seagull demo website"
+description = "Élections Nevers website"
 
 
 # Number of articles to display on homepage
